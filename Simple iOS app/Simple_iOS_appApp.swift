@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct Simple_iOS_appApp: App {
+    // register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
